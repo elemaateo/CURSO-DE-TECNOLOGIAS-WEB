@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGENES</title>
+</head>
+<body>
+    <img src="img/new-york-7781184_640.jpg" width="500"/> <hr/>
+    <img src="img/paris-7539257_1280.jpg" width="500"/> <hr/>
+    <figure>
+        <figcaption>
+            <img src="img/giphy.gif" width="500"/> <hr/> GIF
+        </figcaption>
+    </figure>
+
+    <svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="500" height="500">
+            <!-- Cuerpo -->
+            <circle cx="100" cy="60" r="30" fill="#F9C9A7" />
+            <rect x="85" y="90" width="30" height="60" fill="#F9C9A7" />
+            
+            <!-- Piernas -->
+            <rect x="85" y="150" width="12" height="40" fill="#F9C9A7" />
+            <rect x="103" y="150" width="12" height="40" fill="#F9C9A7" />
+            
+            <!-- Brazos -->
+            <rect x="55" y="90" width="15" height="40" fill="#F9C9A7" />
+            
+            <!-- Mano en movimiento -->
+            <g id="mano">
+              <rect x="130" y="50" width="15" height="40" fill="#F9C9A7" transform="rotate(-30, 137, 70)" />
+              <circle cx="137" cy="40" r="7" fill="#F9C9A7" />
+              <circle cx="145" cy="40" r="7" fill="#F9C9A7" />
+              <circle cx="153" cy="40" r="7" fill="#F9C9A7" />
+              <circle cx="160" cy="40" r="7" fill="#F9C9A7" />
+            </g>
+          
+            <!-- Cara -->
+            <circle cx="90" cy="50" r="5" fill="black" />
+            <circle cx="110" cy="50" r="5" fill="black" />
+            <path d="M85,65 Q100,75 115,65" stroke="black" stroke-width="2" fill="transparent" />
+          
+            <!-- Animación de la mano -->
+            <animateTransform 
+              xlink:href="#mano"
+              attributeName="transform"
+              type="rotate"
+              from="-30 137 70"
+              to="30 137 70"
+              dur="0.5s"
+              repeatCount="indefinite"
+            />
+          </svg>
+          
+    </svg>
+</body>
+</html>
